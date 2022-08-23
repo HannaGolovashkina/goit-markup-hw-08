@@ -1,0 +1,40 @@
+.afterhero__section {
+  padding-top: 94px;
+}
+.afterhero__wrap {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.afterhero__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  color: var(--first-title-color);
+}
+
+.afterhero__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  /* margin-bottom: 30px; */
+  color: var(--second-title-color);
+}
+
+.afterhero__link {
+  width: 270px;
+}
+.afterhero__card {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  display: flex;
+}
