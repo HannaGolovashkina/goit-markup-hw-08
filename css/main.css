@@ -77,6 +77,12 @@ section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -113,6 +119,21 @@ section {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 input {
@@ -266,12 +287,12 @@ input {
 }
 
 .afterhero__section {
-  padding-top: 94px;
+  display: block;
 }
 
 .afterhero__wrap {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -294,7 +315,17 @@ input {
 }
 
 .afterhero__link {
-  width: 270px;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .afterhero__link {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .afterhero__link {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .afterhero__card {
@@ -350,7 +381,7 @@ input {
 
 .team {
   /* margin-bottom: 50px; */
-  padding-top: 94px;
+  display: block;
   color: var(--first-title-color);
   background-color: var(--background-color);
 }
@@ -366,7 +397,7 @@ input {
 
 .team__wrap {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
   /* background-color: #ffffff; */
 }
@@ -419,6 +450,16 @@ input {
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .team__link {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__link {
+    width: calc((100% - 90px) / 4);
+  }
+}
 .team__link:hover, .team__link:focus {
   background-color: #2196f3;
 }
@@ -435,11 +476,8 @@ input {
 }
 
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
   /* background-color: #e5e5e5; */
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 .client__header {
@@ -454,7 +492,7 @@ input {
 
 .client__logo {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -478,9 +516,19 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
   height: 92px;
+  width: calc((100% - 30px) / 2);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .client__link {
+    width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .client__link {
+    width: calc((100% - 180px) / 6);
+  }
 }
 .client__link:hover, .client__link:focus {
   border-color: #2196f3;

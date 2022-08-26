@@ -1,9 +1,6 @@
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
   /* background-color: #e5e5e5; */
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 .client__header {
@@ -18,7 +15,7 @@
 
 .client__logo {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -43,8 +40,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  // width: 170px;
   height: 92px;
+  width: calc((100% - 30px) / 2);
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 90px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 180px) / 6);
+  }
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);

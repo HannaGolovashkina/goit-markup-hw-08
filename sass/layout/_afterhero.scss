@@ -1,9 +1,14 @@
 .afterhero__section {
-  padding-top: 94px;
+  display: block;
 }
+
+.section-afterhero {
+}
+
 .afterhero__wrap {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  // justify-content: center;
   gap: 30px;
 }
 
@@ -26,7 +31,14 @@
 }
 
 .afterhero__link {
-  width: 270px;
+  // width: 270px;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 4);
+  }
 }
 .afterhero__card {
   width: 100%;
