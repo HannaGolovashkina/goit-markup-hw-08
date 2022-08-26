@@ -42,6 +42,9 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
 
 main {
@@ -71,12 +74,8 @@ section {
 }
 
 .section {
-  /* padding-top: 94px; */
-  padding-bottom: 94px;
-}
-
-.section-afterhero {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .visually-hidden {
@@ -109,12 +108,11 @@ section {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red; */
 }
 
 input {

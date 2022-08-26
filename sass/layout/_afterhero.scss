@@ -1,11 +1,8 @@
 .afterhero__section {
-  display: block;
-}
-
-.section-afterhero {
+  padding-top: 94px;
 }
 .afterhero__wrap {
-  // display: flex;
+  display: flex;
   justify-content: center;
   gap: 30px;
 }
@@ -29,8 +26,7 @@
 }
 
 .afterhero__link {
-  // width: 270px;
-  width: 120px;
+  width: 270px;
 }
 .afterhero__card {
   width: 100%;
