@@ -1,3 +1,9 @@
+.about-us {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+}
 .about-us__title {
   font-weight: 700;
   font-size: 36px;
