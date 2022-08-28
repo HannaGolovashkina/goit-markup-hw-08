@@ -1,5 +1,9 @@
 input {
-  width: 358px;
+  width: 100%;
+  max-width: 358px;
+  @include desktop {
+    width: 358px;
+  }
   height: 50px;
   font-family: "Roboto" sans-serif;
   font-style: normal;

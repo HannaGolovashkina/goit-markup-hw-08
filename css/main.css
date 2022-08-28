@@ -137,7 +137,8 @@ section {
 }
 
 input {
-  width: 358px;
+  width: 100%;
+  max-width: 358px;
   height: 50px;
   font-family: "Roboto" sans-serif;
   font-style: normal;
@@ -151,6 +152,11 @@ input {
   background-color: #2f303a;
   color: rgba(255, 255, 255, 0.6);
   /* margin-bottom: 12px; */
+}
+@media screen and (min-width: 1200px) {
+  input {
+    width: 358px;
+  }
 }
 
 .hero__btn {
@@ -677,8 +683,9 @@ input {
 
 .footer-field {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  /* gap: 12px; */
+  gap: 20px;
 }
 
 /* .footer-field:last-child{

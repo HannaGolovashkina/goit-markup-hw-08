@@ -133,8 +133,9 @@
 }
 .footer-field {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  /* gap: 12px; */
+  gap: 20px;
 }
 
 /* .footer-field:last-child{
