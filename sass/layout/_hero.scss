@@ -20,13 +20,28 @@
 }
 
 .hero__title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
   text-align: center;
   letter-spacing: 0.06em;
-  max-width: 696px;
   margin: auto;
   margin-bottom: 30px;
+  @include mobile {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+  }
+  @include tablet {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+    max-width: 360px;
+    // flex-wrap: wrap;
+    // text-align: center;
+  }
+  @include desktop {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    max-width: 696px;
+  }
   /* color: var(--title-color); */
 }
