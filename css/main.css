@@ -411,7 +411,7 @@ input {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .team__item {
     width: calc((100% - 90px) / 4);
   }
@@ -919,8 +919,14 @@ input {
 }
 
 .hero-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .hero-portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .btn {
@@ -950,9 +956,19 @@ input {
 
 .btn-wrap {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 50px;
   gap: 8px;
+}
+@media screen and (min-width: 768px) {
+  .btn-wrap {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-wrap {
+    justify-content: center;
+  }
 }
 
 .portfolio-div {
@@ -964,8 +980,28 @@ input {
 .portfolio-wrap {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
   gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-wrap {
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portfolio-wrap {
+    justify-content: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__link {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio__link {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio {

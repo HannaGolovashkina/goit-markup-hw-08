@@ -1,6 +1,10 @@
 .hero-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .btn {
@@ -34,7 +38,13 @@
 
 .btn-wrap {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  @include tablet {
+    justify-content: center;
+  }
+  @include desktop {
+    justify-content: center;
+  }
   margin-bottom: 50px;
   gap: 8px;
 }
@@ -48,10 +58,24 @@
 .portfolio-wrap {
   display: flex;
   flex-wrap: wrap;
-  /* justify-content: center; */
+  // justify-content: center;
   gap: 30px;
+  @include mobile {
+    justify-content: center;
+  }
+  @include tablet {
+    justify-content: start;
+  }
 }
 
+.portfolio__link {
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
+}
 .portfolio {
   font-weight: 700;
   font-size: 18px;
