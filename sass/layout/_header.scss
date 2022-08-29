@@ -111,15 +111,25 @@
   z-index: 22;
   padding-top: 48px;
   padding-bottom: 48px;
+  padding-left: 40px;
+}
+.mob_wrap {
+  // display: flex;
+  // flex-wrap: wrap;
+  text-align: space-between;
 }
 
 .menu-close {
+  // position: absolute;
   display: block;
+  // justify-content: right;
   margin-left: auto;
   margin-top: 10px;
+  margin-right: 10px;
   border: transparent;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 }
 .mob-menu__navigation {
 }
@@ -133,11 +143,13 @@
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
 }
+
 .mob-menu-link {
 }
 .mobail-connect {
-  // margin-top: 306px;
+  margin-top: 96px;
 }
+
 .mob-connect__tel {
   font-weight: 500;
   font-size: 34px;
@@ -164,6 +176,7 @@
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: #2196f3;
+  text-align: left;
 }
 .mob-soc__link:not(:last-child) {
   margin-bottom: 20px;

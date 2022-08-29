@@ -289,15 +289,22 @@ input {
   z-index: 22;
   padding-top: 48px;
   padding-bottom: 48px;
+  padding-left: 40px;
+}
+
+.mob_wrap {
+  text-align: space-between;
 }
 
 .menu-close {
   display: block;
   margin-left: auto;
   margin-top: 10px;
+  margin-right: 10px;
   border: transparent;
   background-color: transparent;
   padding: 0;
+  cursor: pointer;
 }
 
 .mob-menu__link {
@@ -310,6 +317,10 @@ input {
 
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
+}
+
+.mobail-connect {
+  margin-top: 96px;
 }
 
 .mob-connect__tel {
@@ -339,6 +350,7 @@ input {
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
   color: #2196f3;
+  text-align: left;
 }
 
 .mob-soc__link:not(:last-child) {
