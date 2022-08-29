@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="navigation header-logo">
           <a href="./index.html" class="logo link"
@@ -58,7 +58,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero section">
         <div class="container hero__content">
@@ -168,12 +168,34 @@
           <h2 class="team__header">Наша команда</h2>
           <ul class="list team__wrap">
             <li class="link team__item">
-              <img
-                src="./images/productdesigner1.jpg"
-                alt="product-designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/productdesigner1.jpg  1x,
+                    ./images/productdesigner2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/productdesigner-tab.jpg   1x,
+                    ./images/productdesigner-tab2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/productdesigner-mob.jpg   1x,
+                    ./images/productdesigner-mob2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/productdesigner-mob.jpg"
+                  alt="product-designer"
+                />
+              </picture>
+
               <div class="team__container">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -572,5 +594,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
