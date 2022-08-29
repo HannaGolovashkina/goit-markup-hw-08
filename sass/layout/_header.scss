@@ -135,6 +135,9 @@
 }
 .mob-menu-link {
 }
+.mobail-connect {
+  // margin-top: 306px;
+}
 .mob-connect__tel {
   font-weight: 500;
   font-size: 34px;
@@ -153,6 +156,7 @@
 .mob-soc {
   display: flex;
   // justify-content: space-between;
+  margin-top: 67px;
 }
 .mob-soc__link {
   font-weight: 500;
@@ -161,8 +165,7 @@
   letter-spacing: 0.02em;
   color: #2196f3;
 }
-.mob-soc__link :not(:last-child) {
+.mob-soc__link:not(:last-child) {
   margin-bottom: 20px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  // transform: rotate(90deg);
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
