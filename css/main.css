@@ -368,6 +368,8 @@ input {
   padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mob-menu > .container {
   display: flex;
@@ -1000,6 +1002,7 @@ input {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   position: absolute;
+  overflow-y: auto;
   top: 50%;
   left: 50%;
   padding: 40px;
@@ -1123,13 +1126,18 @@ input {
 .check-txt {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: #757575;
   display: flex;
   align-items: center;
-  margin-top: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .check-txt {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .check-txt span {
   width: 16px;
@@ -1179,11 +1187,17 @@ input {
   display: flex;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--axent-color);
   padding-left: 5px;
+}
+@media screen and (min-width: 1200px) {
+  .treaty {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check-treaty {
@@ -1193,6 +1207,10 @@ input {
 
 .modal-field:not(:last-child) {
   margin-bottom: 10px;
+}
+
+.modal-field:last-child {
+  margin-bottom: 20px;
 }
 
 .modal-btn {
