@@ -16,7 +16,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container navigation__container">
         <nav class="navigation header-logo">
           <a href="./index.html" class="logo link"
             ><span class="blue-logo">Web</span>Studio</a
@@ -42,7 +42,7 @@
         <ul class="header-link list connect">
           <li class="connect__mail link">
             <a href="mailto:info@devstudio.com" class="site-mailtel-link link">
-              <svg class="contact-icon" width="16" height="16">
+              <svg class="contact-icon contact-icon-mail">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -50,7 +50,7 @@
           </li>
           <li class="connect__tel link">
             <a href="tel:+380961111111" class="site-mailtel-link link">
-              <svg class="contact-icon" width="10" height="16">
+              <svg class="contact-icon contact-icon-tel">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -63,14 +63,14 @@
           </svg>
         </button>
       </div>
-      <div class="mob-menu">
+      <div class="mob-menu is-hidden">
         <div class="container">
-            <button class="menu-close" type="button">
-              <svg class="" width="40" height="40">
-                <use href="./images/icons.svg#icon-close_40px"></use>
-              </svg>
-            </button>
-            <d class="mob_wrap">
+          <button class="menu-close" type="button">
+            <svg class="" width="40" height="40">
+              <use href="./images/icons.svg#icon-close_40px"></use>
+            </svg>
+          </button>
+          <div class="mob-menu__wrap">
             <nav class="mob-menu__navigation">
               <ul class="mob-menu__link list">
                 <li class="mob-menu__item">
@@ -90,8 +90,8 @@
                 </li>
               </ul>
             </nav>
-            <!-- </div>
-          <div class="mob_wrap"> -->
+          </div>
+          <div class="mob-menu__con">
             <div class="mobail-connect">
               <ul class="mob-connect list">
                 <li class="mob-connect__tel link">
@@ -654,6 +654,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -84,6 +84,10 @@ section {
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -194,8 +198,19 @@ input {
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation__container {
+    justify-content: space-between;
+  }
+}
+
 .header-link {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-link {
+    display: flex;
+  }
 }
 @media screen and (min-width: 1200px) {
   .header-link {
@@ -209,6 +224,11 @@ input {
 
 .connect {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .connect {
+    display: block;
+  }
 }
 @media screen and (min-width: 1200px) {
   .connect {
@@ -240,15 +260,33 @@ input {
 
 .site-mailtel-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1428571429;
   letter-spacing: 0.02em;
   display: flex;
   align-items: center;
   color: var(--second-title-color);
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 768px) {
+  .site-mailtel-link {
+    justify-content: start;
+    font-size: 12px;
+    line-height: 1.1666666667;
+  }
+  .site-mailtel-link:not(:last-child) {
+    padding-top: 21px;
+    padding-bottom: 10px;
+  }
+  .site-mailtel-link:not(:first-child) {
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .site-mailtel-link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.1428571429;
+  }
 }
 .site-mailtel-link:hover, .site-mailtel-link:focus {
   color: var(--axent-color);
@@ -270,7 +308,42 @@ input {
 
 .contact-icon {
   fill: currentColor;
-  margin-right: 10px;
+}
+@media screen and (min-width: 768px) {
+  .contact-icon {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-icon {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-icon-mail {
+    width: 10px;
+    height: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-icon-mail {
+    width: 14px;
+    height: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-icon-tel {
+    width: 14px;
+    height: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-icon-tel {
+    width: 18px;
+    height: 14px;
+  }
 }
 
 .menu-open {
@@ -278,6 +351,11 @@ input {
   border: transparent;
   background-color: transparent;
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  .menu-open {
+    display: none;
+  }
 }
 
 .mob-menu {
@@ -291,20 +369,27 @@ input {
   padding-bottom: 48px;
   padding-left: 40px;
 }
-
-.mob_wrap {
-  text-align: space-between;
+.mob-menu > .container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  overflow: auto;
 }
 
 .menu-close {
-  display: block;
-  margin-left: auto;
-  margin-top: 10px;
-  margin-right: 10px;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  width: 40px;
+  height: 40px;
   border: transparent;
   background-color: transparent;
   padding: 0;
   cursor: pointer;
+}
+.menu-close:hover, .menu-close:focus {
+  color: #2196f3;
 }
 
 .mob-menu__link {
@@ -317,10 +402,6 @@ input {
 
 .mob-menu__item:not(:last-child) {
   margin-bottom: 32px;
-}
-
-.mobail-connect {
-  margin-top: 96px;
 }
 
 .mob-connect__tel {
@@ -355,7 +436,12 @@ input {
 
 .mob-soc__link:not(:last-child) {
   margin-bottom: 20px;
+  padding-right: 5px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-soc__link:not(:first-child) {
+  padding-left: 5px;
 }
 
 .hero {
