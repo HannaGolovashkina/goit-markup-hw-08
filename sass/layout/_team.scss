@@ -27,7 +27,7 @@
   @include tablet {
     width: calc((100% - 30px) / 2);
   }
-  @include tablet {
+  @include desktop {
     width: calc((100% - 90px) / 4);
   }
 

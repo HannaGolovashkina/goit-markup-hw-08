@@ -667,7 +667,7 @@ input {
     width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .team__item {
     width: calc((100% - 90px) / 4);
   }
