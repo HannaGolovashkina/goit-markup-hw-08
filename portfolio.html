@@ -146,12 +146,28 @@
             <li class="link portfolio__link">
               <a href="" class="link img-portfolio">
                 <div class="img-portfolio-wrap">
-                  <img
-                    src="./images/techno.jpg"
-                    alt="techno"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/techno.jpg 1x, ./images/techno-2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/techno-tab.jpg    1x,
+                        ./images/techno-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/techno-mob.jpg    1x,
+                        ./images/techno-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/techno-mob.jpg" alt="techno" width:
+                    ="450" height: ="294" />
+                  </picture>
                   <p class="portfolio-hover-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -167,12 +183,31 @@
             <li class="link portfolio__link">
               <a href="" class="link img-portfolio">
                 <div class="img-portfolio-wrap">
-                  <img
-                    src="./images/basketball.jpg"
-                    alt="basketball"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/basketball.jpg    1x,
+                        ./images/basketball-2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/basketball-tab.jpg    1x,
+                        ./images/basketball-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/basketball-mob.jpg    1x,
+                        ./images/basketball-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/techno-mob.jpg" alt="basketball" width:
+                    ="450" height: ="294" />
+                  </picture>
                   <p class="portfolio-hover-text">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
