@@ -9,8 +9,12 @@
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
+  @include desktop {
+    width: 528px;
+    height: 581px;
+  }
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -53,11 +57,15 @@
   justify-content: center;
   font-weight: 700;
   font-size: 20px;
-  line-height: calc(23 / 20);
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  @include desktop {
+    line-height: calc(23 / 20);
+    margin-bottom: 15px;
+  }
 }
 
 .modal-input {
@@ -138,7 +146,8 @@
   color: #757575;
   display: flex;
   align-items: center;
-  /* margin-top: 17px; */
+  margin-top: 20px;
+
   span {
     width: 16px;
     height: 15px;
