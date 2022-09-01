@@ -53,6 +53,7 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+  flex-grow: inherit;
 }
 
 .portfolio-wrap {
@@ -69,6 +70,7 @@
 }
 
 .portfolio__link {
+  display: flex;
   @include tablet {
     width: calc((100% - 30px) / 2);
   }

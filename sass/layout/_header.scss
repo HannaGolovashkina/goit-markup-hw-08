@@ -156,6 +156,7 @@
 .mob-menu {
   position: fixed;
   width: 100vw;
+  max-width: 767px;
   height: 100vh;
   background-color: #ffffff;
   top: 0;
@@ -206,15 +207,12 @@
   margin-bottom: 32px;
 }
 
-.mob-menu-link {
-}
-
 .mob-connect__tel {
   font-weight: 500;
   font-size: 34px;
   line-height: calc(40 / 34);
   letter-spacing: 0.02em;
-  color: --axent-color;
+  color: var(--axent-color);
 }
 
 .mob-connect__mail {
@@ -222,11 +220,11 @@
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--second-title-color);
 }
 .mob-soc {
   display: flex;
-  // justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 67px;
 }
 .mob-soc__link {
