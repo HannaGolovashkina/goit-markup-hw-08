@@ -71,7 +71,7 @@
 .team__soc {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  // gap: 10px;
 }
 .team__link {
   width: 44px;
@@ -80,6 +80,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+  .team__link:hover &,
+  .team__link:focus & {
+    fill: #ffffff;
+  }
 }
 
 .team__icon {

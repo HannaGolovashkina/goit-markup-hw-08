@@ -739,7 +739,6 @@ input {
 .team__soc {
   display: flex;
   justify-content: center;
-  gap: 10px;
 }
 
 .team__link {
@@ -749,6 +748,10 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
+}
+.team__link:hover .team__link, .team__link:focus .team__link {
+  fill: #ffffff;
 }
 
 .team__icon {
