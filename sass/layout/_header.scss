@@ -65,7 +65,42 @@
 .current-axent-color {
   color: var(--axent-color);
 }
+.connect__mail {
+  // padding-top: 21px;
+  @include tablet {
+    padding-bottom: 10px;
+  }
+  @include desktop {
+    padding-bottom: 0;
+  }
+  // .connect__tel {
+  //   padding-bottom: 21px;
+  // }
+}
+.connect__mailtel {
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    text-align: right;
+    &:not(:last-child) {
+      padding-top: 21px;
+    }
 
+    &:not(:first-child) {
+      padding-bottom: 21px;
+    }
+  }
+  @include desktop {
+    &:not(:last-child) {
+      padding-top: 0px;
+    }
+
+    &:not(:first-child) {
+      padding-bottom: 0px;
+    }
+  }
+}
 .site-mailtel-link {
   font-weight: 500;
   letter-spacing: 0.02em;
@@ -76,13 +111,8 @@
     justify-content: start;
     font-size: 12px;
     line-height: calc(14 / 12);
-    &:not(:last-child) {
-      padding-top: 21px;
-      padding-bottom: 10px;
-    }
-    &:not(:first-child) {
-      padding-bottom: 21px;
-    }
+    // padding-top: 21px;
+    // padding-bottom: 21px;
   }
   @include desktop {
     padding-top: 32px;

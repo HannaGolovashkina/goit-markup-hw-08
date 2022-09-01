@@ -70,21 +70,30 @@
   /* justify-content: space-between; */
 }
 .footer-cont:not(:first-child) {
-  margin-top: 60px;
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
 }
 
-.footer-cont:not(:last-child) {
+.footer-cont {
+  // &:not(:last-child) {
   margin-right: auto;
+  margin-left: auto;
   text-align: center;
-
+  justify-content: space-between;
+  // }
   @include desktop {
     text-align: left;
+    justify-content: space-around;
   }
 }
 
 .footer-cont:last-child {
   @include tablet {
     margin-top: 60px;
+  }
+  @include desktop {
+    margin-top: 0;
   }
 }
 .footer-hed {
