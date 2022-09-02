@@ -9,8 +9,18 @@
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
+  @media screen and (max-width: 479px) {
+    width: 98vw;
+    height: 98vh;
+  }
+  @include mobile {
+    width: 450px;
+    height: 609px;
+  }
+  @include tablet {
+    width: 450px;
+    height: 609px;
+  }
   @include desktop {
     width: 528px;
     height: 581px;

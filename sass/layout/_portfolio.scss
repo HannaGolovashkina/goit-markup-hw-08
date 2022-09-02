@@ -53,7 +53,7 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
-  flex-grow: inherit;
+  flex-grow: 1;
 }
 
 .portfolio-wrap {
@@ -89,8 +89,10 @@
 }
 
 .img-portfolio {
-  display: block;
-  /* margin-bottom: 20px; */
+  // display: block;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
