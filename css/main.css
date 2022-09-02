@@ -588,8 +588,8 @@ input {
 
 @media screen and (min-width: 768px) {
   .contact-icon-mail {
-    width: 10px;
-    height: 14px;
+    width: 14px;
+    height: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -601,8 +601,8 @@ input {
 
 @media screen and (min-width: 768px) {
   .contact-icon-tel {
-    width: 14px;
-    height: 12px;
+    width: 18px;
+    height: 14px;
   }
 }
 @media screen and (min-width: 1200px) {
