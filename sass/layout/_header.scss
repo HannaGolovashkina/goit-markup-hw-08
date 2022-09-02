@@ -68,10 +68,10 @@
 .connect__mail {
   // padding-top: 21px;
   @include tablet {
-    padding-bottom: 10px;
+    margin-bottom: 10px;
   }
   @include desktop {
-    padding-bottom: 0;
+    margin-bottom: 0;
   }
   // .connect__tel {
   //   padding-bottom: 21px;
@@ -85,6 +85,7 @@
     text-align: right;
     &:not(:last-child) {
       padding-top: 21px;
+      // margin-bottom: 10px;
     }
 
     &:not(:first-child) {
@@ -93,7 +94,7 @@
   }
   @include desktop {
     &:not(:last-child) {
-      padding-top: 0px;
+      margin-bottom: 0px;
     }
 
     &:not(:first-child) {
@@ -111,14 +112,19 @@
     justify-content: start;
     font-size: 12px;
     line-height: calc(14 / 12);
+
     // padding-top: 21px;
     // padding-bottom: 21px;
   }
+
   @include desktop {
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
     line-height: calc(16 / 14);
+
+    // padding-top: 0px;
+    // padding-bottom: 0px;
   }
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -38,12 +38,12 @@
   width: 30px;
   height: 30px;
   background-color: #ffffff;
-  border: 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   &:hover,
   &:focus {
     background-color: currentColor;
-    border: 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #188ce8;
   }
 }
 
@@ -122,7 +122,9 @@
   color: #757575;
   margin-bottom: 4px;
 }
-
+textarea {
+  display: block;
+}
 .modal-txt {
   height: 120px;
   width: 100%;
