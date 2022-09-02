@@ -19,6 +19,11 @@
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   color: var(--first-title-color);
+  text-align: center;
+
+  @include tablet {
+    text-align: left;
+  }
 }
 
 .afterhero__text {
