@@ -515,18 +515,25 @@ input {
     justify-content: end;
     text-align: right;
   }
-  .connect__mailtel:not(:last-child) {
+}
+@media screen and (min-width: 768px) {
+  .site-mail-link {
     padding-top: 21px;
   }
-  .connect__mailtel:not(:first-child) {
+}
+@media screen and (min-width: 1200px) {
+  .site-mail-link {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .site-tel-link {
     padding-bottom: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .connect__mailtel:not(:last-child) {
-    margin-bottom: 0px;
-  }
-  .connect__mailtel:not(:first-child) {
+  .site-tel-link {
     padding-bottom: 0px;
   }
 }
