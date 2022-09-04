@@ -79,8 +79,8 @@
     flex-wrap: wrap;
     justify-content: end;
     text-align: right;
-    &:not(:last-child) {
-      // margin-bottom: 10px;
+    &:last-child {
+      // padding-right: 15px;
     }
   }
   @include desktop {
@@ -100,9 +100,11 @@
 .site-tel-link {
   @include tablet {
     padding-bottom: 21px;
+    padding-right: 16px;
   }
   @include desktop {
     padding-bottom: 0px;
+    padding-right: 0px;
   }
 }
 .site-mailtel-link {
