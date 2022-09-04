@@ -1014,8 +1014,8 @@ input {
   background-color: #2196f3;
 }
 
-.team__soc-item {
-  gap: 10px;
+.team__soc :not(:last-child) {
+  margin-right: 10px;
 }
 
 .team__icon {
