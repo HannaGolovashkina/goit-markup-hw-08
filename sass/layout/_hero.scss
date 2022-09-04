@@ -69,6 +69,7 @@
 
 .hero__title {
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.06em;
   margin: auto;
   margin-bottom: 30px;
@@ -76,20 +77,18 @@
   font-size: 20px;
   line-height: calc(38 / 20);
   @include mobile {
-    font-weight: 900;
     font-size: 26px;
     line-height: calc(42 / 26);
   }
   @include tablet {
-    font-weight: 900;
     font-size: 26px;
     line-height: calc(42 / 26);
     max-width: 360px;
+    // display: flex;
     // flex-wrap: wrap;
     // text-align: center;
   }
   @include desktop {
-    font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
     max-width: 696px;

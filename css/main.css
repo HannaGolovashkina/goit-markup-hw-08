@@ -765,6 +765,7 @@ summary {
 
 .hero__title {
   text-align: center;
+  text-transform: uppercase;
   letter-spacing: 0.06em;
   margin: auto;
   margin-bottom: 30px;
@@ -775,14 +776,12 @@ summary {
 }
 @media screen and (min-width: 480px) {
   .hero__title {
-    font-weight: 900;
     font-size: 26px;
     line-height: 1.6153846154;
   }
 }
 @media screen and (min-width: 768px) {
   .hero__title {
-    font-weight: 900;
     font-size: 26px;
     line-height: 1.6153846154;
     max-width: 360px;
@@ -790,7 +789,6 @@ summary {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    font-weight: 900;
     font-size: 44px;
     line-height: 1.3636363636;
     max-width: 696px;
