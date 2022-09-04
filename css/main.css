@@ -886,6 +886,10 @@ input {
   }
 }
 
+.about-us__section {
+  padding-bottom: 94px;
+}
+
 .about-us__title {
   font-weight: 700;
   font-size: 36px;
