@@ -52,7 +52,7 @@
   border-radius: 50%;
   &:hover,
   &:focus {
-    background-color: currentColor;
+    color: #188ce8;
     border: 1px solid #188ce8;
   }
 }
@@ -81,7 +81,6 @@
 
 .modal-input {
   width: 100%;
-  // max-width: 386px;
   height: 40px;
   background-color: #ffffff;
   border: 1px solid rgba(33, 33, 33, 0.2);

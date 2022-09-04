@@ -1359,7 +1359,7 @@ summary {
   border-radius: 50%;
 }
 .modal-close:hover, .modal-close:focus {
-  background-color: currentColor;
+  color: #188ce8;
   border: 1px solid #188ce8;
 }
 
